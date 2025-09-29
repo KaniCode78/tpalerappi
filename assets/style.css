@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root {
+    --fuente: 'Montserrat', sans-serif;
+    --primario: #9bc0d9;
+    --primarioOscuro: #293241;
+    --secundario: #dffbfc;
+    --secundarioOscuro: #705F7D;
+
+    --blanco: #fff;
+    --negro: #000;
+
+    --sobraTexto: rgba(255, 255, 255, .75);
+    --fondoBody: #DAEAF0;
+
+    --sombraCard: #EBEBEB;
+    --fondoRappi: #FF4420;
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/**globales**/
+
+
+body {
+    background-color: var(--fondoRappi);
+    line-height: 1;
+    /**labasedelafuentainterlinbeado**/
+    font-size: clamp(14px, 4vw, 20px);
+    color: white;
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* img {
+    min-width: 100%;
+} */
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2rem;
+    /*centrado de con*/
+}
+
+/**utilidades**/
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+/**inician estilos**/
+
+.card-principal {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-color: 3px solid coral;
+    box-shadow: 0 0 10px var(--sombraCard);
+    border-radius: 28px;
+}
+
+.bloque1 {
+    padding-top: 2rem;
+}
+
+
+
+.bloque1 .banner {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.bloque1 .foto {
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0 0 10px var(--sombraCard);
+    display: flex;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.bloque1 h1 {
+
+    font-size: 3rem;
+    text-align: center;
+    font-family: var(--fuente);
+    font-weight: 500;
+}
+
+.bloque1 h2 {
+
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: var(--fuente);
+    font-weight: 500;
+}
+
+.bloque1 p {
+
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: var(--fuente);
+    font-weight: 400;
+}
+
+
+.bloque2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+
+}
+
+.bloque2 .iconos {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: .5rem;
+    border-color: 3px solid coral;
+    box-shadow: 0 0 10px var(--sombraCard);
+}
+
+.bloque2 a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+/*bloque3*/
+
+.bloque3 p {
+    font-family: var(--fuente);
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.bloque3 ul,
+li {
+    font-family: var(--fuente);
+    list-style-type: disc;
+    padding-left: 2rem;
+    line-height: 1.5;
+}
+
+/*bloque4*/
+
+
+.bloque4 span {
+    font-family: var(--fuente);
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.bloque4 .btn {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Estilos del whatsapp */
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px var(--sombraCard);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.whatsapp-button:hover {
+    background-color: #1EBE56;
+}
+
+.whatsapp-button i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* Estilos del botón */
+.facebook-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px var(--sombraCard);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.facebook-button:hover {
+    background-color: #155dbb;
+}
+
+.facebook-button i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* Estilos del botón linkedin*/
+.linkedin-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px var(--sombraCard);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.linkedin-button:hover {
+    background-color: #bc2a8d;
+}
+
+.linkedin-button i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* Estilos del botón tiktok */
+.tiktok-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px var(--sombraCard);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.tiktok-button:hover {
+    background-color: #333333;
+}
+
+.tiktok-button i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* Estilos del botón contacto */
+.contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px var(--sombraCard);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.contact-button:hover {
+    background-color: #218838;
+}
+
+.contact-button i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+
+/* Estilos del botón compartir */
+.share-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px var(--sombraCard);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.share-button:hover {
+    background-color: #0056b3;
+}
+
+.share-button i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+
+.bloque5 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.bloque5 h3 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--fuente);
+    font-weight: 500;
+}
+
+.bloque5 p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: var(--fuente);
+    font-weight: 400;
+}
+
+.bloque5 img {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+
+
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+
+
+    .contenedor h1 {
+        font-size: 8rem;
+    }
+
+    .contenedor h2 {
+        font-size: 5rem;
+    }
+
+    .contenedor p {
+        font-size: 3rem;
+    }
+
+    .contenedor {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .bloque3 ul,
+    li {
+        padding-left: 3rem;
+        font-size: 3rem;
+    }
+}
